@@ -38,3 +38,7 @@ PRODUCT_DEVICE := u8833
 # CM packages
 PRODUCT_PACKAGES += \
     Torch
+
+# Copy device specific prebuilt files.
+PRODUCT_COPY_FILES += \
+    vendor/mahdi/prebuilt/bootanimations/BOOTANIMATION-480x800.zip:system/media/bootanimation.zip
