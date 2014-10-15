@@ -37,4 +37,4 @@ PRODUCT_PACKAGES += \
 
 # Copy device specific prebuilt files.
 PRODUCT_COPY_FILES += \
-    vendor/mahdi/prebuilt/bootanimations/BOOTANIMATION-480x800.zip:system/media/bootanimation.zip
+    vendor/mahdi/prebuilt/bootanimations/BOOTANIMATION-800x480.zip:system/media/bootanimation.zip
