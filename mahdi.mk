@@ -27,10 +27,6 @@ $(call inherit-product, vendor/mahdi/configs/common_full_phone.mk)
 # Inherit device configuration
 $(call inherit-product, device/huawei/u8833/full_u8833.mk)
 
-# Correct boot animation size for the screen
-TARGET_SCREEN_HEIGHT := 800
-TARGET_SCREEN_WIDTH := 480
-
 # Device name
 PRODUCT_NAME := mahdi_u8833
 PRODUCT_DEVICE := u8833
