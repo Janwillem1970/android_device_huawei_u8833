@@ -14,14 +14,15 @@
 # limitations under the License.
 #
 
-
-# Specify phone tech before including full_phone
-$(call inherit-product, vendor/mahdi/config/gsm.mk)
+# Inherit from those products. Most specific first.
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common CM stuff
-$(call inherit-product, vendor/mahdi/config/common_full_phone.mk)
-$(call inherit-product, vendor/mahdi/config/common.mk)
+$(call inherit-product, vendor/mahdi/configs/gsm.mk)
 
+# Inherit some common stuff.
+$(call inherit-product, vendor/mahdi/configs/common.mk)
+$(call inherit-product, vendor/mahdi/configs/common_full_phone.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/huawei/u8833/full_u8833.mk)
